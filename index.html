@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           overflow-x: hidden;
+        }
+            div.header{
+             display: flex;
+             justify-content: space-between;
+             position: fixed;
+             top: 0;
+             width: 100%;
+             background-color: whitesmoke;
+             padding: 15px;
+             letter-spacing: 5px;
+             z-index: 10px;
+           }
+           div.nav{
+             display: flex;
+             gap: 30px;
+             padding:8px;
+             
+           }
+   
+           .item2{
+               position: absolute;
+               top: 750px;
+               left: 50px;
+               font-size: xx-large;
+               letter-spacing: 5px;
+           }
+          
+           .container2{
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 5%;
+            display: flex;
+            justify-content: first baseline;
+            height: 80vh;
+            gap: 50px;
+           }
+           .item3, .item4,.item5{
+               display: flex;
+               gap: 60px;
+               
+           }
+           .item3{
+                 flex-basis: 85%;
+                 line-height: 1.5;
+           }
+           div.t{
+               letter-spacing: 5px;
+           }
+           .item4{
+                 letter-spacing: 5px;
+                 flex-basis: 85%;      
+           }
+           .item5{
+               display: flex;
+               flex-shrink: 14;
+           }
+       
+           .b{
+               background-color: rgb(247, 251, 255);
+           }
+           .container3{
+             width: 100%;
+             height: 80vh;
+             background-color:white;
+             display: flex;
+             margin-top: 5%;
+             margin-left: 10%;
+             margin-right: 10%;
+             gap: 5%;
+           }
+           .container div{
+             width: 25%;
+             font-size: 40px;
+             padding: 30%;
+             
+           }
+           .item6{
+             flex-basis: 40%;
+             padding: 8%;
+             
+           }
+           .item7{
+             flex-basis: 85%;
+            
+           }
+           .container4{
+             width: 100%;
+             height: 80vh;
+             background-color:white;
+             display: flex;
+             margin-top: 4%;
+             margin-left: 3%;
+   
+           }
+           input{
+             color: black;
+             width: 60%;
+             padding: 20px;
+             border: none;
+             font-size: 20px;
+             border-bottom: 1px solid;
+           }
+            
+       </style>
+</head>
+<body>
+      <!-- header part -->
+      <div class="header">
+        <div>Gourmet au Catering </div>
+        <div class="nav">
+            <div>About </div>
+            <div>Menu </div>
+            <div>Contact</div>
+        </div> 
+    </div>
+    <!-- content part -->
+     <div class="container1">
+        <div class="item1"><img src="https://www.w3schools.com/w3images/hamburger.jpg"><div>
+        <div class="item2">Le Catering</div>
+     </div>
+
+    <div class="container2">
+           <div class="item3">
+              <img src="https://www.w3schools.com/w3images/tablesetting2.jpg">
+            </div>
+           <div>
+                <div class="item4">
+                    <h1>About Catering</h1>
+                </div>
+                <div  class="t" style="text-align: center;">Tradition since 1889 </div>
+                <div class="item5">
+                <p class="a">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit 
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                  iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use 
+                  <span style="background-color: rgb(237, 228, 228);">seasonal</span> ingredients.<br><br>
+            
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                  sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat.</p>
+                </div>  
+            </div>
+    </div>
+    <div class="container3">
+        <div class="item6">
+            <h2>Our Menu</h2>
+            <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+            <h2>Honey Almond Granola with Fruits</h2>
+            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+            <h2>Belgian Waffle</h2>
+            <p>Vanilla flavored batter with malted flour 7.50</p>
+            <h2>Scrambled eggs</h2>
+            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50 </p>
+            <h2>Blueberry Pancakes</h2>
+            <p>With syrup, butter and lots of berries 8.50</p>
+        </div>
+        <div class="item7"><img src="https://www.w3schools.com/w3images/tablesetting.jpg"  class="imag3" height="700"></div> 
+        </div>
+        <div class="container4">
+            <div class="item8">
+                <h2>Contact</h2>
+                <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+                <h4>Catering Service, 42nd Living St, 43043 New York, NY</h4>
+                <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+                <input type="text" value="Name" placeholder="Name" id="text"> <br><br><br><br>
+                <input type="text" id="How many people" placeholder="How many people"> <br><br><br><br>
+                <input type="datetime-local" id="date name=datetime" placeholder="date and time"> <br><br><br><br>
+                <input type="text" id="text" placeholder="Message/Special requirements"> <br><br><br><br>
+                <button>SEND MESSAGE</button><br><br><br><br><br><br><br>
+                <p style="text-align: center;">Powered by<a href="#" style="color: black;">W3.css</a></p>
+            </div>
+        </div>
+</body>
+</html>
